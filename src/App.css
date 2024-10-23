@@ -4,7 +4,8 @@
 }
 .App {
   /* background-color: #000000; */
-  background-image: url("../public/digital-camo.jpg");
+  background-image: url("../public/background-birds.jpg");
+  
   min-height: 100vh;
   height: 100%;
   display: flex;

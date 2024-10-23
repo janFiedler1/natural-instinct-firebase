@@ -2,10 +2,11 @@ import React from "react";
 import PieceGrid from './PieceGridComponent';
 import '../component-css/HomeComponent.css';
 
-function Home () {
+function Home ({pieces}) {
     return (
         <React.Fragment>
-            <PieceGrid className="page"/> 
+            <h1 className="homepage-title">Newest Drops</h1>
+            <PieceGrid pieces={pieces} className="page"/> 
         </React.Fragment>
     )
 }

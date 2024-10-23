@@ -11,7 +11,7 @@ function Piece(prop) {
     return (
         <React.Fragment>
             <a href={prop.payment_link}>
-                <div key={prop.id} className="piece-container">
+                <div key={prop.id} className={"piece-container"+(prop.status=="sold" ? " grayed-out" : "")}>
                     {/* <div className="piece-title">{prop.title}</div> */}
                     <img src={prop.path}/>  
                 </div>

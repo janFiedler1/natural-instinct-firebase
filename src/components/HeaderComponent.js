@@ -4,11 +4,8 @@ import About from './AboutComponent';
 import Home from './HomeComponent';
 import Contact from './Web3ContactComponent';
 
-function Header({stateChangeFunction}) {
-    const links = [{title: 'Home', id:"home", component:<Home/>},
-        {title: 'About', id:"about", component:<About/>},
-        {title: 'Contact', id:"contact", component:<Contact/>}
-     ]
+function Header({stateChangeFunction, links}) {
+    
     
     const handleClick = (newContent) => {
         stateChangeFunction(newContent);
