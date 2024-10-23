@@ -1,6 +1,8 @@
 .pieces-container {
     /* display: block; */
     columns: 3;
+    column-width: 200px;
+    grid-template-columns: fit-content(200px);
     align-content: space-between;
     width: 80%;
     margin-left: auto;
