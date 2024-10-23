@@ -7,7 +7,6 @@
     display: flex;
     width: 100%;
     background-color: #000000;
-    align-items: center;
     height: 64px;
     box-shadow: 0 0 5px rgb(97, 97, 97), 0 5px 12px -6px rgb(97, 97, 97), 0 -12px 25px -19px rgb(97, 97, 97);
   }
