@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: #000000;
+    align-items: center;
+    height: 64px;
+    box-shadow: 0 0 5px rgb(97, 97, 97), 0 5px 12px -6px rgb(97, 97, 97), 0 -12px 25px -19px rgb(97, 97, 97);
+  }
+  .logo-word {
+    margin-left: 1vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 100%;
+  }
+  .navigation-menu{
+    margin-right: 0;
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+  }
+
+  .navigation-dropdown {
+    height: 100%;
+    display: none;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin-right: 1%;
+    margin-left: auto;
+    color: #ffffff;
+  }
+  .navigation-dropdown-icon {
+    height: 100%;
+  }
+  .nav-btn-background {
+    height: 100%;
+  }
+  .navigation-item {
+    text-decoration: none;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    color:#ffffff;
+    height: 100%;
+    font-size: large;
+    font-weight: bolder;
+    background-color: inherit;
+    background: #000000;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .navigation-item:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 4s ease-in-out infinite;
+    background-size: 400% 100%;
+    transition: all 0.5s;
+  }
+  
+  @keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+  }
+  .navigation-item:visited {
+    color: inherit;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navigation-menu {
+      display: none;
+    }
+    .navigation-dropdown {
+      display: block;
+    }
+  }

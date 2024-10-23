@@ -1,0 +1,21 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App {
+  /* background-color: #000000; */
+  background-image: url("../public/digital-camo.jpg");
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  font-family: "Schoolbell", cursive;
+  color: white;
+}
+:visited {
+  color: inherit;
+  text-decoration: none;
+}
