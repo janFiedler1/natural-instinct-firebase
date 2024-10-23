@@ -5,6 +5,10 @@
 .App {
   /* background-color: #000000; */
   background-image: url("../public/background-birds.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   min-height: 100vh;
   height: 100%;
   display: flex;
