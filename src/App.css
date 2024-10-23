@@ -4,7 +4,7 @@
 }
 .App {
   /* background-color: #000000; */
-  background-image: url("../public/background-birds.jpg");
+  background-image: url("../public/drawn-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
