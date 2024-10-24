@@ -42,7 +42,7 @@ function Header({tabChangeFunction, links, shopSections}) {
                     </button>
                 ))}
             </div>
-            <div className={"shop-dropdown menu "+(isShopDropdownOpen ? "toggle_on":"toggle_off")}>
+            <div className={"shop-dropdown menu "+(isShopDropdownOpen ? "toggle_shop_on":"toggle_shop_off")}>
                 {shopSections.map((section) => (
                     <button key={section.id} onClick={() => changeTab(section.component)} className="shop-navigation-item" >
                         {section.title}

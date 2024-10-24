@@ -26,29 +26,30 @@
   .dropdown-navigation {
     z-index: 2;
     position: fixed;
-    top: 64px;
+    top: -1000px;
     left: 0;
     width: 100%;
     font-size: x-large;
-    transition: all 0.5s;
+    transition: all 0.2s linear;
   }
   .shop-dropdown {
     z-index: 2;
-    display: none;
+    /* display: none; */
     position: fixed;
     font-size: x-large;
-    top: 64px;
+    top: -1000px;
     width: 100%;
     margin-left: auto;
     margin-right: 0;
-    transition: all 0.5s linear;
+    transition: all 0.4s linear;
     background-color: #dad9d9;
     border-width: 1px;
     border-color: #000000;
     box-shadow: 0 0 5px rgb(97, 97, 97), 0 5px 12px -6px rgb(97, 97, 97), 0 -12px 25px -19px rgb(97, 97, 97);
   }
   .menu {
-    z-index: 10;
+    z-index: 9;
+    top: -1000px;
   }
   .dropdown-navigation-item {
     width: 100%;
@@ -65,11 +66,17 @@
     outline: none;
     box-shadow: none;
   }
+  .toggle_shop_on {
+    display: block;
+    top: 64px;
+  }
+  .toggle_shop_off {
+  }
   .toggle_on {
     display: block;
+    top: 64px;
   }
   .toggle_off {
-    display: none;
   }
   .shop-dropdown .toggle_on{
     background-color: aliceblue;
