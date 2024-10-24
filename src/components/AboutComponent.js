@@ -7,23 +7,29 @@ function About () {
         <React.Fragment>
             <div className="page">
                 <div className="about-section">
-                    <img src={process.env.PUBLIC_URL+'/natural-instinct.jpg'}/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mollis lectus, id pharetra nisi. In ultricies ut diam eu facilisis. Quisque sollicitudin dui ac odio hendrerit, semper euismod felis dapibus. Donec mattis nec elit sit amet imperdiet. Duis blandit id eros non vehicula. Quisque at felis non sapien elementum accumsan. Morbi massa sapien, euismod quis turpis a, ultricies tincidunt quam.
+                    <img src={process.env.PUBLIC_URL+'/ethan-about-1.jpg'}/>
+                    <p>
+I started the brand Natural Instinct because I believe if something deep down in your heart feels right, you should pursue it. In other words, Follow your instincts. I have always loved fashion and creativity since I was young. The feeling of being free to create whatever you desire and wear whatever feels right. Natural Instincts Focus is to be simply unique, no duplicates, no carbon copies of other clothing, just truly a 1 of 1. The goal of this brand is to express creativity through sustainable wearable art. There are too many critics and not enough creatives in the world, and by pushing sustainable fashion by reusing fabrics instead of producing new ones we can make a positive impact on the climate and the fashion industry while also giving clothes a whole new life. I want this brand to inspire and motivate others to express themselves freely and wear what they want instead of mold to the norm. Each piece is reworked, sewn, and hand crafted to have a new theme, inspiration and life of its own.
+                    </p>
+                </div>
+                <div className="about-section">
+                    <p>
+Fashion has a huge impact on people and the planet, and fast fashion owns a large and growing share of the problem. The most successful fast fashion brands use influencers and other ploys to push trend-driven items at ridiculously low prices, all while producing new clothing collections as often as every two weeks. That all comes at a huge cost to the lives of the workers who make the clothes and the environment.
  
- Nunc imperdiet vestibulum nisi, ac condimentum augue aliquet a. In a diam nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eget odio mollis, scelerisque diam vel, pellentesque augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras luctus dolor eleifend molestie tempor. Duis gravida feugiat libero sit amet feugiat. Cras commodo ligula libero, lobortis porta risus consequat convallis. Donec suscipit nulla in imperdiet posuere.</p>
-                </div>
-                <div className="about-section">
-                    <p>Etiam faucibus tempor quam, id auctor risus mattis in. Suspendisse bibendum tellus diam, at laoreet nisl scelerisque eget. Praesent vehicula dui metus, ac accumsan odio blandit ac. Integer pretium nisl at lorem viverra ullamcorper. Donec ultricies risus neque, vitae consectetur lacus dictum vel. Aenean bibendum sem eget leo congue ultricies. In ornare a velit ut imperdiet. Sed rutrum pulvinar ultricies.
-
-Quisque rhoncus velit quis erat mattis viverra vitae eget dolor. Cras id porta ante, in feugiat dui. Nam eu eleifend ex. Donec eget suscipit dolor. Ut vel odio sed nibh consectetur blandit. Nulla dignissim tincidunt erat, nec placerat arcu pulvinar et. Vivamus elementum velit rhoncus ante luctus posuere. Sed cursus lacus risus, ultrices hendrerit risus sodales non.</p>
-                    <img src={process.env.PUBLIC_URL+'/natural-instinct.jpg'}/>
-                </div>
-                <div className="about-section">
-                    <img src={process.env.PUBLIC_URL+'/natural-instinct.jpg'}/>
-                    <p>Aliquam et posuere est, id placerat tellus. Nam consequat sapien id libero suscipit, a elementum nunc imperdiet. Nullam vitae neque sed erat lacinia euismod. Aenean at sem eu nulla rutrum scelerisque. Phasellus aliquet, nunc et efficitur imperdiet, enim nisl blandit nibh, a vehicula purus libero a risus. In tempor vulputate magna ac commodo. Ut ac ante ac magna mollis dictum sed eget nunc. Sed interdum tortor mi, quis porttitor nulla cursus quis. Quisque bibendum tellus quis orci tincidunt suscipit eu ac lacus. Nulla ullamcorper at purus a faucibus.</p>
+ ·  	Each year millions of tonnes of clothes are produced, worn, and thrown away. Every Second, the equivalent of a rubbish truck load of clothes is burnt or buried in landfill.
+  
+ ·  	Plastic particles washed off from products such as synthetic clothes contribute up to 35% of the primary plastic that is polluting our oceans. Every time we do our laundry an average of 9 million microfibers are released into wastewater treatment plants that cannot filter them.
+  
+ Here are some resources that talk more about the ongoing Fast Fashion Industry problem:
+ <br/><a href="https://www.prettygreenlily.com/fast-fashion-facts/">prettygreenlily.com</a>
+ &emsp;<a href="https://goodonyou.eco/fast-fashion-facts/">goodonyou.eco</a>
+ &emsp;<a href="https://www.youtube.com/watch?v=38sgighOWKg">10 Fast Fashion Facts You Might Not Know</a>
+                    </p>
+                    
+                    <img src={process.env.PUBLIC_URL+'/about-2.jpg'}/>
                 </div>
             </div>
-            <Modal/>
+            {/* <Modal/> */}
         </React.Fragment>
     )
 }

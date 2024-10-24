@@ -3,11 +3,13 @@
     margin-bottom: 20px;
     margin-top: 10px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
     color: black;
     height: auto;
-    font-size: 25px;
+    font-size: 30px;
+    background-color: #ffffffa9;
 }
 .about-section span{
     margin: 10px;  
@@ -15,12 +17,16 @@
 .about-section img {
     margin-left: 10px;
     margin-right: 10px;
-    height: 100%;
+    height: 400px;
     margin-top: auto;
     margin-bottom: auto;
-    border: solid #000;
+    /* border: solid #000;
     border-color: black;
-    border-width: 1px;
+    border-width: 1px; */
+    
+}
+.about-section a {
+    color: blue;
     
 }
 @media screen and (max-width: 600px) {

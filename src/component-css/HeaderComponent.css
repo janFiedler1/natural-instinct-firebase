@@ -84,4 +84,7 @@
     .navigation-dropdown {
       display: block;
     }
+    .logo-word {
+      font-size: 20px;
+    }
   }
