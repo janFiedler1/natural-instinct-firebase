@@ -36,3 +36,6 @@
 .light {
   color: white;
 }
+:hover {
+  cursor: url("../public/eagle-64-ico.ico") 3 64, auto;
+}

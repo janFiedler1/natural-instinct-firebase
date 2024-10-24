@@ -36,11 +36,16 @@
     z-index: 2;
     display: none;
     position: fixed;
-    font-size: large;
+    font-size: x-large;
     top: 64px;
     width: 100%;
-    transition: all 0.5s;
-    background-color: #000000;
+    margin-left: auto;
+    margin-right: 0;
+    transition: all 0.5s linear;
+    background-color: #dad9d9;
+    border-width: 1px;
+    border-color: #000000;
+    box-shadow: 0 0 5px rgb(97, 97, 97), 0 5px 12px -6px rgb(97, 97, 97), 0 -12px 25px -19px rgb(97, 97, 97);
   }
   .menu {
     z-index: 10;
@@ -53,6 +58,12 @@
   .shop-navigation-item {
     height: 200px;
     width: 200px;
+    background-color: inherit;
+    background: #dad9d9;
+    border-width: 1px;
+    border-color: #000000;
+    outline: none;
+    box-shadow: none;
   }
   .toggle_on {
     display: block;
@@ -60,7 +71,11 @@
   .toggle_off {
     display: none;
   }
-  
+  .shop-dropdown .toggle_on{
+    background-color: aliceblue;
+    display: flex;
+    float: right;
+  }
   .unlock-header {
     height: max-content;
     display: flex;
