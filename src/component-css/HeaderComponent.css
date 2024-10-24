@@ -24,24 +24,38 @@
     display: flex;
   }
   .dropdown-navigation-menu {
+    z-index: 2;
     position: fixed;
-    font-size: xx-small;
     top: 64px;
     left: 0;
     width: 100%;
+    font-size: x-large;
     transition: all 0.5s;
   }
-  .toggle_on {
-    display: block;
-    height: auto;
-    font-size: x-large;
-  }
-  .toggle_off {
+  .shop-dropdown-menu {
+    z-index: 2;
     display: none;
+    position: fixed;
+    font-size: large;
+    top: 64px;
+    right: 0;
+    width: 100%;
+    transition: all 0.5s;
   }
   .dropdown-navigation-item {
     width: 100%;
   }
+  .shop-navigation-item {
+    height: 200px;
+    width: 200px;
+  }
+  .toggle_on {
+    display: block; 
+  }
+  .toggle_off {
+    display: none;
+  }
+  
   .unlock-header {
     height: max-content;
     display: flex;
@@ -78,7 +92,6 @@
     box-shadow: none;
   }
   .navigation-item:hover {
-    cursor: pointer;
     background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -93,15 +106,6 @@
       height: auto;
       font-size: x-large;
     }
-  }
-  .shop-dropdown-menu {
-    display: none;
-    position: fixed;
-    font-size: large;
-    top: 64px;
-    left: 0;
-    width: 100%;
-    transition: all 0.5s;
   }
     
   

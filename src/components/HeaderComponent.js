@@ -6,13 +6,18 @@ function Header({tabChangeFunction, links, shopSections}) {
     
     const changeTab = (newContent) => {
         setIsNavOpen(false);
+        setShopDropdownOpen(false);
         tabChangeFunction(newContent);
     };
 
     const [isNavOpen, setIsNavOpen] = useState(false);
     const showMenu = () => {
         setIsNavOpen(!isNavOpen);
-        console.log("navigation-dropdown "+(isNavOpen ? "toggle_on":"toggle_off"));
+    };
+
+    const [isShopDropdownOpen, setShopDropdownOpen] = useState(false);
+    const toggleShopDropdown = () => {
+        setShopDropdownOpen(!isShopDropdownOpen);
     };
 
     return (
@@ -21,7 +26,7 @@ function Header({tabChangeFunction, links, shopSections}) {
                 <h1 className="logo-word">NATURAL INSTINCT</h1>
                 <div className="navigation-menu">
                     {links.map((link) => (
-                        <button key={link.id} onClick={() => changeTab(link.component)} className={"navigation-item "+(link.id=="shop" ? "shop-nav-button" : "")} >
+                        <button key={link.id} onClick={() => (link.id=="shop" ? toggleShopDropdown() : changeTab(link.component))} className={"navigation-item "+(link.id=="shop" ? "shop-nav-button" : "")} >
                             {link.title}
                         </button>
                     ))}
@@ -37,9 +42,9 @@ function Header({tabChangeFunction, links, shopSections}) {
                     </button>
                 ))}
             </div>
-            <div className="shop-dropdown-menu ">
+            <div className={"shop-dropdown-menu "+(isShopDropdownOpen ? "toggle_on":"toggle_off")}>
                 {shopSections.map((section) => (
-                    <button key={section.id} onClick={() => changeTab(section.component)} className="dropdown-navigation-item" >
+                    <button key={section.id} onClick={() => changeTab(section.component)} className="shop-navigation-item" >
                         {section.title}
                     </button>
                 ))}
