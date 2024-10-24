@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 
 .header {
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,8 +23,30 @@
     height: 100%;
     display: flex;
   }
-
-  .navigation-dropdown {
+  .dropdown-navigation-menu {
+    position: fixed;
+    font-size: xx-small;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  .toggle_on {
+    display: block;
+    height: auto;
+    font-size: x-large;
+  }
+  .toggle_off {
+    display: none;
+  }
+  .dropdown-navigation-item {
+    width: 100%;
+  }
+  .unlock-header {
+    height: max-content;
+    display: flex;
+  }
+  .navigation-dropdown{
     height: 100%;
     display: none;
     background-color: inherit;

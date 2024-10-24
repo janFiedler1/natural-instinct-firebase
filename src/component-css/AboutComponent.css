@@ -36,3 +36,13 @@
         margin-right: auto;
     }
   }
+
+@media (max-width: 1200px) {
+    .about-section {
+        display: block;
+    }
+    .about-section img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }

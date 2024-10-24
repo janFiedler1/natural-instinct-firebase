@@ -17,7 +17,9 @@ function Main (){
         // {id: 7, title: 'D Wade Shorts', path: process.env.PUBLIC_URL+'/dwade-shorts-front.jpg', type: "shorts", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
      ]
 
-    const headers = [{title: 'Home', id:"home", component:<Home pieces={pieces}/>},
+    const headers = [
+        {title: '+ Shop', id:"shop", component:<Contact/>},
+        {title: 'Home', id:"home", component:<Home pieces={pieces}/>},
         {title: 'About', id:"about", component:<About/>},
         {title: 'Contact', id:"contact", component:<Contact/>}
     ]
@@ -30,7 +32,7 @@ function Main (){
     
     return (
         <Fragment>
-            <Header stateChangeFunction = {handleContentChange} links={headers}/>
+            <Header tabChangeFunction = {handleContentChange} links={headers}/>
             <div className='content-container'>
                 {content}
             </div>
