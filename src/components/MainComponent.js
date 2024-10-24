@@ -38,6 +38,7 @@ function Main (){
     return (
         <Fragment>
             <Header tabChangeFunction = {handleContentChange} links={headers} shopSections={shopSections}/>
+            <img src={process.env.PUBLIC_URL+'/background-logo.png'} className='background-icon'/>
             <div className='content-container'>
                 {content}
             </div>

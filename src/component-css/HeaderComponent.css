@@ -38,19 +38,21 @@
     position: fixed;
     font-size: large;
     top: 64px;
-    right: 0;
     width: 100%;
     transition: all 0.5s;
+    background-color: #000000;
   }
   .dropdown-navigation-item {
     width: 100%;
+    border-radius: 0;
+    padding: 0;
   }
   .shop-navigation-item {
     height: 200px;
     width: 200px;
   }
   .toggle_on {
-    display: block; 
+    display: block;
   }
   .toggle_off {
     display: none;

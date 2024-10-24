@@ -5,7 +5,7 @@
 .App {
   /* background-color: #000000; */
   cursor: url("../public/eagle-64-ico.ico") 3 64, auto;
-  background-image: url("../public/drawn-background.jpg");
+  background-image: url("../public/background-clouds.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,6 +18,13 @@
   font-size: calc(10px + 2vmin);
   font-family: "Schoolbell", cursive;
   color: white;
+}
+.background-icon {
+  z-index: 1;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  height: 300px;
 }
 :visited {
   color: inherit;
