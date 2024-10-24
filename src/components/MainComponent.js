@@ -18,10 +18,15 @@ function Main (){
      ]
 
     const headers = [
-        {title: '+ Shop', id:"shop", component:<Contact/>},
+        {title: '+ Shop', id:"shop", component:<br/>},
         {title: 'Home', id:"home", component:<Home pieces={pieces}/>},
         {title: 'About', id:"about", component:<About/>},
         {title: 'Contact', id:"contact", component:<Contact/>}
+    ]
+    const shopSections = [
+        {title: 'Tops', id:'longsleeve', component:<br/>, img: process.env.PUBLIC_URL+'/white-sox-front.jpg'},
+        {title: 'Bottoms', id:'longsleeve', component:<br/>, img: process.env.PUBLIC_URL+'/white-sox-front.jpg'},
+        {title: 'Accessories', id:'longsleeve', component:<br/>, img: process.env.PUBLIC_URL+'/white-sox-front.jpg'}
     ]
 
     const [content, setContent] = useState(<Home pieces={pieces}/>);
@@ -32,7 +37,7 @@ function Main (){
     
     return (
         <Fragment>
-            <Header tabChangeFunction = {handleContentChange} links={headers}/>
+            <Header tabChangeFunction = {handleContentChange} links={headers} shopSections={shopSections}/>
             <div className='content-container'>
                 {content}
             </div>

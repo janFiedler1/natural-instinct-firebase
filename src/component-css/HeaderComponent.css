@@ -87,6 +87,23 @@
     background-size: 400% 100%;
     transition: all 0.5s;
   }
+  .shop-nav-button:hover {
+    .shop-dropdown-menu {
+      display: block;
+      height: auto;
+      font-size: x-large;
+    }
+  }
+  .shop-dropdown-menu {
+    display: none;
+    position: fixed;
+    font-size: large;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    transition: all 0.5s;
+  }
+    
   
   @keyframes rainbow_animation {
     0%,100% {

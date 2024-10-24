@@ -7,7 +7,6 @@ function PieceGrid ({pieces}) {
         <React.Fragment>
             <div className="pieces-container">
                 {pieces.map((piece) => (
-                    // <Piece id={piece.id} title={piece.title} path={piece.path} payment_link={piece.payment_link} status={piece.status}/>
                     <Piece piece={piece}/>
                 ))}
             </div>    

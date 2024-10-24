@@ -1,10 +1,7 @@
 import React, { Component, useState } from "react";
 import '../component-css/HeaderComponent.css';
-import About from './AboutComponent';
-import Home from './HomeComponent';
-import Contact from './Web3ContactComponent';
 
-function Header({tabChangeFunction, links}) {
+function Header({tabChangeFunction, links, shopSections}) {
     
     
     const changeTab = (newContent) => {
@@ -24,7 +21,7 @@ function Header({tabChangeFunction, links}) {
                 <h1 className="logo-word">NATURAL INSTINCT</h1>
                 <div className="navigation-menu">
                     {links.map((link) => (
-                        <button key={link.id} onClick={() => changeTab(link.component)} className="navigation-item" >
+                        <button key={link.id} onClick={() => changeTab(link.component)} className={"navigation-item "+(link.id=="shop" ? "shop-nav-button" : "")} >
                             {link.title}
                         </button>
                     ))}
@@ -37,6 +34,13 @@ function Header({tabChangeFunction, links}) {
                 {links.map((link) => (
                     <button key={link.id} onClick={() => changeTab(link.component)} className="dropdown-navigation-item" >
                         {link.title}
+                    </button>
+                ))}
+            </div>
+            <div className="shop-dropdown-menu ">
+                {shopSections.map((section) => (
+                    <button key={section.id} onClick={() => changeTab(section.component)} className="dropdown-navigation-item" >
+                        {section.title}
                     </button>
                 ))}
             </div>
