@@ -1,17 +1,23 @@
 .pieces-container {
     /* display: block; */
     columns: 3;
-    column-width: 200px;
-    grid-template-columns: fit-content(200px);
     align-content: space-between;
-    width: 80%;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 1300px) {
+    .pieces-container {
+        columns: 2;
+        max-width: 900px;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
     .pieces-container {
         columns: 1;
+        max-width: 400px;
     }
   }
