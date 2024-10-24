@@ -5,7 +5,7 @@
     border: solid #000;
     border-color: black;
     border-width: 2px;
-    height: 400px;
+    height: auto;
     text-decoration: none;
     padding-top: 3%;
     margin-bottom: 5%;
@@ -29,7 +29,7 @@
     margin-left: auto;
 }
 img { 
-    height:90%;
+    height:300px;
     margin-right: auto;
     margin-left: auto;
 }

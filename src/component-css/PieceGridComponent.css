@@ -18,6 +18,9 @@
 @media screen and (max-width: 1000px) {
     .pieces-container {
         columns: 1;
-        max-width: 400px;
+        width: auto;
+        max-width: 350px;
+        margin-left: max(auto, 15px);
+        margin-right: max(auto, 15px);
     }
   }

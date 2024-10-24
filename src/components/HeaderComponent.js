@@ -35,14 +35,14 @@ function Header({tabChangeFunction, links, shopSections}) {
                     <img className="navigation-dropdown-icon" src={process.env.PUBLIC_URL+'/hamburger-icon-white.png'}/>
                 </div>
             </div>
-            <div className={"dropdown-navigation-menu "+(isNavOpen ? "toggle_on":"toggle_off")}>
+            <div className={"dropdown-navigation menu "+(isNavOpen ? "toggle_on":"toggle_off")}>
                 {links.map((link) => (
                     <button key={link.id} onClick={() => changeTab(link.component)} className="dropdown-navigation-item" >
                         {link.title}
                     </button>
                 ))}
             </div>
-            <div className={"shop-dropdown-menu "+(isShopDropdownOpen ? "toggle_on":"toggle_off")}>
+            <div className={"shop-dropdown menu "+(isShopDropdownOpen ? "toggle_on":"toggle_off")}>
                 {shopSections.map((section) => (
                     <button key={section.id} onClick={() => changeTab(section.component)} className="shop-navigation-item" >
                         {section.title}
