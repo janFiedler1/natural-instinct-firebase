@@ -53,3 +53,9 @@ a {
     padding: 0%;
     text-decoration: none;
 }
+@media screen and (max-width: 600px) {
+    .piece-container:hover {
+        transform: default;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.02), 0 5px 12px -6px rgba(0, 0, 0, 0.1), 0 -12px 25px -19px rgba(0, 0, 0, 0.2);
+    }
+}
