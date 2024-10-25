@@ -24,9 +24,9 @@ function Main (){
         {title: 'Contact', id:"contact", component:<Contact/>}
     ]
     const shopSections = [
-        {title: 'Tops', id:'tops', component:<br/>, img: process.env.PUBLIC_URL+'/white-sox-front.jpg'},
-        {title: 'Bottoms', id:'bottoms', component:<br/>, img: process.env.PUBLIC_URL+'/white-sox-front.jpg'},
-        {title: 'Accessories', id:'accessories', component:<br/>, img: process.env.PUBLIC_URL+'/white-sox-front.jpg'}
+        {title: 'Tops', id:'tops', component:<br/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
+        {title: 'Bottoms', id:'bottoms', component:<br/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
+        {title: 'Accessories', id:'accessories', component:<br/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
     ]
 
     const [content, setContent] = useState(<Home pieces={pieces}/>);
