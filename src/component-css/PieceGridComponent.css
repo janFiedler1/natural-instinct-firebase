@@ -6,6 +6,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    margin-bottom: 30px;
+    height: auto;
 }
 
 @media (max-width: 1300px) {
