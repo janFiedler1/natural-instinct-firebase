@@ -11,10 +11,10 @@ function Piece({piece}) {
     return (
         <React.Fragment>
             <a href={piece.payment_link}>
-                <div key={piece.id} className={"piece-container"+(piece.status=="sold" ? " grayed-out" : "")}>
-                    <img src={piece.path}/>
+                <div key={piece.id} className="piece-container">
+                    <img src={piece.path} className={(piece.status=="sold" ? " grayed-out" : "")}/>
                     <div className={"piece-info"+(piece.status=="sold" ? " red" : "")}>
-                        <span className={"piece-title"+(piece.status=="sold" ? " red" : "")}>{piece.status=="sold" ? "Sold" : piece.title}</span>
+                        <span className="piece-title">{piece.status=="sold" ? "Sold" : piece.title}</span>
                         <span className="piece-price">{"$"+piece.price}</span>
                     </div>
                 </div>
