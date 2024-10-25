@@ -26,8 +26,11 @@
     
 }
 .about-section a {
-    color: blue;
-    
+    color: blue; 
+}
+.about-subsection {
+    width: 100%;
+    display: block;
 }
 @media screen and (max-width: 600px) {
     .about-section {

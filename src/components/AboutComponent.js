@@ -13,23 +13,27 @@ I started the brand Natural Instinct because I believe if something deep down in
                     </p>
                 </div>
                 <div className="about-section">
+                    <img src={process.env.PUBLIC_URL+'/earth-fire.jpg'}/>
                     <p>
 Fashion has a huge impact on people and the planet, and fast fashion owns a large and growing share of the problem. The most successful fast fashion brands use influencers and other ploys to push trend-driven items at ridiculously low prices, all while producing new clothing collections as often as every two weeks. That all comes at a huge cost to the lives of the workers who make the clothes and the environment.
- 
- ·  	Each year millions of tonnes of clothes are produced, worn, and thrown away. Every Second, the equivalent of a rubbish truck load of clothes is burnt or buried in landfill.
-  
- ·  	Plastic particles washed off from products such as synthetic clothes contribute up to 35% of the primary plastic that is polluting our oceans. Every time we do our laundry an average of 9 million microfibers are released into wastewater treatment plants that cannot filter them.
-  
- Here are some resources that talk more about the ongoing Fast Fashion Industry problem:
- <br/><a href="https://www.prettygreenlily.com/fast-fashion-facts/">prettygreenlily.com</a>
- &emsp;<a href="https://goodonyou.eco/fast-fashion-facts/">goodonyou.eco</a>
- &emsp;<a href="https://www.youtube.com/watch?v=38sgighOWKg">10 Fast Fashion Facts You Might Not Know</a>
                     </p>
-                    
-                    <img src={process.env.PUBLIC_URL+'/about-2.jpg'}/>
+                </div>
+                <div className="about-section">
+                    <p>Each year millions of tonnes of clothes are produced, worn, and thrown away. Every Second, the equivalent of a rubbish truck load of clothes is burnt or buried in landfill. Plastic particles washed off from products such as synthetic clothes contribute up to 35% of the primary plastic that is polluting our oceans. Every time we do our laundry an average of 9 million microfibers are released into wastewater treatment plants that cannot filter them.
+                    Here are some resources that talk more about the ongoing Fast Fashion Industry problem:
+                        <br/><a href="https://www.prettygreenlily.com/fast-fashion-facts/">prettygreenlily.com</a>
+                        &emsp;<a href="https://goodonyou.eco/fast-fashion-facts/">goodonyou.eco</a>
+                        &emsp;<a href="https://www.youtube.com/watch?v=38sgighOWKg">10 Fast Fashion Facts You Might Not Know</a>
+                    </p>
+                
+                
+                    <img src={process.env.PUBLIC_URL+'/dump.jpg'}/>
                 </div>
             </div>
             {/* <Modal/> */}
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+<stripe-buy-button buy-button-id="buy_btn_1QDXg6GOWRyAkjhrXDhfYaUj"  publishable-key="pk_test_51QD9ejGOWRyAkjhrs1cQNi6f2LoyH8soXyNz2YKZ2didTDtyzKZlbsv7P9H4snKUiUR0aRDEaBdrYnzYzgmTq76Q001lQ3KGt0">oooooooooooooo</stripe-buy-button>
         </React.Fragment>
     )
 }
