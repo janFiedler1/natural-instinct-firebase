@@ -5,16 +5,18 @@ import About from './AboutComponent';
 import Home from './HomeComponent';
 import Contact from './Web3ContactComponent';
 import '../component-css/MainComponent.css'
+import ShopPage from './ShopPageComponent';
 
 
 function Main (){
-    const pieces = [{id: 1, title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced.png', type: "shorts", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
-        {id: 2, title: 'Earth First Longsleeve Sold',  path: process.env.PUBLIC_URL+'/earth-first-longsleeve.png', type: "longsleeve", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 200.00, status: "sold"},
-        {id: 3, title: 'Give Me Space Longsleeve', path: process.env.PUBLIC_URL+'/give-me-space-longsleeve.png', type: "longsleeve", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
-        {id: 4, title: 'Yin Yang Longsleeve', path: process.env.PUBLIC_URL+'/no-light-longsleeve.png', type: "longsleeve", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 70.00, status: "available"},
-        {id: 5, title: 'White Sox Jersey', path: process.env.PUBLIC_URL+'/white-sox-front.jpg', type: "jersey", payment_link:"https://buy.stripe.com/test_dR6cNR5fzg4Ce40000", price: 35.00, status: "available"},
-        {id: 6, title: 'Calvin & Hobbes Hoodie', path: process.env.PUBLIC_URL+'/calvin-hobbs-front.jpg', type: "hoodie", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 85.00, status: "available"},
-        {id: 7, title: 'D Wade Shorts', path: process.env.PUBLIC_URL+'/dwade-shorts-front.jpg', type: "shorts", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
+    const pieces = [{id: 1, title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced.png', type: "bottom", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
+        {id: 2, title: 'Earth First Longsleeve Sold',  path: process.env.PUBLIC_URL+'/earth-first-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 200.00, status: "sold"},
+        {id: 3, title: 'Give Me Space Longsleeve', path: process.env.PUBLIC_URL+'/give-me-space-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
+        {id: 4, title: 'Yin Yang Longsleeve', path: process.env.PUBLIC_URL+'/no-light-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 70.00, status: "available"},
+        {id: 5, title: 'White Sox Jersey', path: process.env.PUBLIC_URL+'/white-sox-front.jpg', type: "top", payment_link:"https://buy.stripe.com/test_dR6cNR5fzg4Ce40000", price: 35.00, status: "available"},
+        {id: 6, title: 'Calvin & Hobbes Hoodie', path: process.env.PUBLIC_URL+'/calvin-hobbs-front.jpg', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 85.00, status: "available"},
+        {id: 7, title: 'D Wade Shorts', path: process.env.PUBLIC_URL+'/dwade-shorts-front.jpg', type: "bottom", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
+        {id: 8, title: 'Give Me Space Longsleeve', path: process.env.PUBLIC_URL+'/give-me-space-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
      ]
 
     const headers = [
@@ -23,10 +25,21 @@ function Main (){
         {title: 'About', id:"about", component:<About/>},
         {title: 'Contact', id:"contact", component:<Contact/>}
     ]
+
+    const filteredPieces = (id) => {
+        let filteredPiecesArray = [];
+        for (let i= 0; i<pieces.length; i++) {
+            if (pieces[i].type === id) {
+                filteredPiecesArray = [...filteredPiecesArray, pieces[i]];
+            }
+        }
+        return filteredPiecesArray;
+    }
+    
     const shopSections = [
-        {title: 'Tops', id:'tops', component:<br/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
-        {title: 'Bottoms', id:'bottoms', component:<br/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
-        {title: 'Accessories', id:'accessories', component:<br/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
+        {title: 'Tops', id:'tops', component:<ShopPage pieces={filteredPieces("top")} title="Tops"/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
+        {title: 'Bottoms', id:'bottoms', component:<ShopPage pieces={filteredPieces("bottom")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
+        {title: 'Accessories', id:'accessories', component:<ShopPage pieces={filteredPieces("accessory")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
     ]
 
     const [content, setContent] = useState(<Home pieces={pieces}/>);

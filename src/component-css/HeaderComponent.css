@@ -57,6 +57,8 @@
     border-radius: 0;
     padding: 0;
     --webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
 
   }
   .shop-navigation-item {
