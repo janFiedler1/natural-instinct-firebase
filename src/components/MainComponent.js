@@ -9,7 +9,7 @@ import ShopPage from './ShopPageComponent';
 
 
 function Main (){
-    const pieces = [{id: 1, title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced.png', type: "bottom", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
+    const pieces = [{id: 1, title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced.png', type: "bottom", payment_link:"https://buy.stripe.com/cN2bKtcR415b4jSbII", price: 60.00, status: "available"},
         {id: 2, title: 'Earth First Longsleeve Sold',  path: process.env.PUBLIC_URL+'/earth-first-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 200.00, status: "sold"},
         {id: 3, title: 'Give Me Space Longsleeve', path: process.env.PUBLIC_URL+'/give-me-space-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
         {id: 4, title: 'Yin Yang Longsleeve', path: process.env.PUBLIC_URL+'/no-light-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 70.00, status: "available"},
