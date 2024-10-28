@@ -10,13 +10,12 @@ import ShopPage from './ShopPageComponent';
 
 function Main (){
     const pieces = [{id: 1, title: 'Rockets Shorts', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced.png', type: "bottom", payment_link:"https://buy.stripe.com/cN2bKtcR415b4jSbII", price: 60.00, status: "available"},
-        {id: 2, title: 'Earth First Longsleeve Sold',  path: process.env.PUBLIC_URL+'/earth-first-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 200.00, status: "sold"},
-        {id: 3, title: 'Give Me Space Longsleeve', path: process.env.PUBLIC_URL+'/give-me-space-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
-        {id: 4, title: 'Yin Yang Longsleeve', path: process.env.PUBLIC_URL+'/no-light-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 70.00, status: "available"},
-        {id: 5, title: 'White Sox Jersey', path: process.env.PUBLIC_URL+'/white-sox-front.jpg', type: "top", payment_link:"https://buy.stripe.com/test_dR6cNR5fzg4Ce40000", price: 35.00, status: "available"},
-        {id: 6, title: 'Calvin & Hobbes Hoodie', path: process.env.PUBLIC_URL+'/calvin-hobbs-front.jpg', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 85.00, status: "available"},
-        {id: 7, title: 'D Wade Shorts', path: process.env.PUBLIC_URL+'/dwade-shorts-front.jpg', type: "bottom", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
-        {id: 8, title: 'Give Me Space Longsleeve', path: process.env.PUBLIC_URL+'/give-me-space-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/test_8wMg2pbRE51r64wfYZ", price: 60.00, status: "available"},
+        {id: 2, title: 'Earth First Longsleeve',  path: process.env.PUBLIC_URL+'/earth-first-longsleeve.png', type: "top", payment_link:"", price: 200.00, status: "sold"},
+        {id: 3, title: 'Give Me Space Jacket', path: process.env.PUBLIC_URL+'/give-me-space-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/00g5m58AO8xD9EcbIJ", price: 60.00, status: "available"},
+        {id: 4, title: 'Yin Yang Longsleeve', path: process.env.PUBLIC_URL+'/no-light-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/4gw5m54ky4hneYw6or", price: 70.00, status: "available"},
+        {id: 5, title: 'White Sox Jersey', path: process.env.PUBLIC_URL+'/white-sox-front.jpg', type: "top", payment_link:"https://buy.stripe.com/6oE5m54kyaFL4jSaEI", price: 35.00, status: "available"},
+        {id: 6, title: 'Calvin & Hobbes Hoodie', path: process.env.PUBLIC_URL+'/calvin-hobbs-front.jpg', type: "top", payment_link:"https://buy.stripe.com/9AQbKtg3gaFL03CdQS", price: 85.00, status: "available"},
+        {id: 7, title: 'D Wade Shorts', path: process.env.PUBLIC_URL+'/dwade-shorts-front.jpg', type: "bottom", payment_link:"https://buy.stripe.com/fZe8yh18m7tzaIg3ch", price: 60.00, status: "available"},
      ]
 
     const headers = [
