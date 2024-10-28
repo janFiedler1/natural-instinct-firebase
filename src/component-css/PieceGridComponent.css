@@ -1,13 +1,12 @@
 .pieces-container {
-    /* display: block; */
     columns: 3;
+    column-fill: balance;
     align-content: space-between;
     max-width: 1350px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 15px;
-    height: auto;
 }
 
 @media (max-width: 1300px) {
