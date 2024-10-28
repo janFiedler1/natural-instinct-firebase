@@ -1,4 +1,6 @@
 .footer {
+    display: flex;
+    flex-direction: column;
   /*
     position: fixed;
     left: 0;
@@ -13,5 +15,14 @@
   }
   .footer a {
     color: blue;
+  }
+  .social-links {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .social-link-img {
+    height: 50px;
+    margin: 10px;
   }
   

@@ -31,9 +31,6 @@ Fashion has a huge impact on people and the planet, and fast fashion owns a larg
                 </div>
             </div>
             {/* <Modal/> */}
-            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-
-<stripe-buy-button buy-button-id="buy_btn_1QDXg6GOWRyAkjhrXDhfYaUj"  publishable-key="pk_test_51QD9ejGOWRyAkjhrs1cQNi6f2LoyH8soXyNz2YKZ2didTDtyzKZlbsv7P9H4snKUiUR0aRDEaBdrYnzYzgmTq76Q001lQ3KGt0">oooooooooooooo</stripe-buy-button>
         </React.Fragment>
     )
 }

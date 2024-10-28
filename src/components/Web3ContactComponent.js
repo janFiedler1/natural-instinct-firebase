@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "../component-css/W3ContactComponent.css"
 
 export default function Contact() {
@@ -28,20 +28,26 @@ export default function Contact() {
     };
   
     return (
-      <div className="contact-form">
-        <form onSubmit={onSubmit}>
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name" required/>
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" required/>
-          <label htmlFor="message">Message</label>
-          <textarea name="message" required></textarea>
-  
-          <button type="submit">Submit</button>
-  
-        </form>
-        <span>{result}</span>
-  
-      </div>
+      <React.Fragment>
+        <div className="contact-form">
+          <form onSubmit={onSubmit}>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" required/>
+            <label htmlFor="email">Email</label>
+            <input type="email" name="email" required/>
+            <label htmlFor="message">Message</label>
+            <textarea name="message" required></textarea>
+    
+            <button type="submit">Submit</button>
+    
+          </form>
+          <span>{result}</span>
+        </div>
+        <div className="contact-message">
+          <span className="contact-message-text">
+            I do custom pieces on request, fill out the form above to let me know what you want to see!
+          </span>
+        </div>
+      </React.Fragment>
     );
   }
