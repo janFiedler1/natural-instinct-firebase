@@ -1,0 +1,66 @@
+.piece-modal {
+    display: none;
+    z-index: 8;
+    border: solid #000;
+    border-color: black;
+    border-width: 2px;
+    background-color: white;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    height: 0px;
+    width: 0px;
+    transition: height 0.2s ease-out, width 0.2s ease-out;
+    color: black
+}
+.piece-modal-open{
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+}
+.piece-modal-image-container {
+    height: 100%;
+    width: 30vw;
+    background-color: rgb(185, 185, 185);
+    border-right: solid #000;
+    border-color: black;
+    border-width: 2px;
+}
+.piece-modal-info {
+    display: flex;
+    padding: 3vw;
+    flex-direction: column;
+    height: 100%;
+    width: 50vw;
+    background-color: rgb(226, 226, 226);
+}
+.piece-modal-info * {
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+.title {
+    font-size: xx-large;
+}
+.description {
+    font-size: x-large;
+}
+.measurements {
+    font-size: x-large;
+}
+.buy-button {
+    font-weight: 900;
+    width: 300px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-large;
+    border: solid #000;
+    border-color: black;
+    border-width: 2px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+}
+.buy-button span{
+    margin: auto;
+}
