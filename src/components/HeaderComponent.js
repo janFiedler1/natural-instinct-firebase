@@ -52,19 +52,33 @@ function Header({tabChangeFunction, links, shopSections}) {
                 </div>
             </div>
             <div className={"dropdown-navigation menu "+(isNavOpen ? "toggle_on":"toggle_off")}>
-                {links.map((link) => (
+                {/* {links.map((link) => (
                     <button key={link.id} onClick={() => (link.id=="shop" ? toggleShopDropdown() : changeTab(link.component))} className="dropdown-navigation-item" >
                         {link.title}
                     </button>
+                ))} */}
+                {/* / */}
+                <button key={0} onClick={toggleShopDropdown} className={"dropdown-navigation-item"} >
+                    {"+ Shop"}
+                </button>
+                {links.slice(1,4).map((link) => (
+                    <a href={link.url}>
+                        <button key={link.id} className={"dropdown-navigation-item"} >
+                            {link.title}
+                        </button>
+                    </a>
                 ))}
+                {/*  */}
             </div>
             <div className={"shop-dropdown menu "+(isShopDropdownOpen ? "toggle_shop_on":"toggle_shop_off")}>
                 <div className="shop-dropdown-container">
                     {shopSections.map((section) => (
-                        <button key={section.id} onClick={() => changeTab(section.component)} className="shop-navigation-item">
-                            <img src={section.img} className="shop-dropdown-img"/>
-                            <span>{section.title}</span>
-                        </button>
+                        <a href={section.url}>
+                            <button key={section.id} className="shop-navigation-item">
+                                <img src={section.img} className="shop-dropdown-img"/>
+                                <span>{section.title}</span>
+                            </button>
+                        </a>
                     ))}
                 </div>
             </div>

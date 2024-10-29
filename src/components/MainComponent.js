@@ -73,9 +73,9 @@ function Main (){
       ]);
     
     const shopSections = [
-        {title: 'Tops', id:'tops', component:<ShopPage pieces={filteredPieces("top")} title="Tops"/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
-        {title: 'Bottoms', id:'bottoms', component:<ShopPage pieces={filteredPieces("bottom")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
-        {title: 'Accessories', id:'accessories', component:<ShopPage pieces={filteredPieces("accessory")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
+        {title: 'Tops', id:'tops', url: '/shop/tops', component:<ShopPage pieces={filteredPieces("top")} title="Tops"/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
+        {title: 'Bottoms', id:'bottoms', url: '/shop/bottoms', component:<ShopPage pieces={filteredPieces("bottom")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
+        {title: 'Accessories', id:'accessories', url: '/shop/bottoms', component:<ShopPage pieces={filteredPieces("accessory")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
     ]
 
     const [content, setContent] = useState(<Home pieces={pieces}/>);
