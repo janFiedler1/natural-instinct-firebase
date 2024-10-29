@@ -7,8 +7,11 @@ import Contact from './Web3ContactComponent';
 import '../component-css/MainComponent.css'
 import ShopPage from './ShopPageComponent';
 
+import { BrowserRouter, createBrowserRouter, RouterProvider} from 'react-router-dom';
+
 
 function Main (){
+
     const pieces = [{id: 1, title: 'Rockets Shorts', measurements: ['Medium', '19.5 Inches'], description: 'Made from a pair of used vintage pants and a vintage James Harden Houston Rockets Jersey. Back welt pockets included.', path: process.env.PUBLIC_URL+'/rockets-shorts-enhanced.png', type: "bottom", payment_link:"https://buy.stripe.com/cN2bKtcR415b4jSbII", price: 60.00, status: "available", images: [process.env.PUBLIC_URL+'/top-icon.jpg']},
         {id: 2, title: 'Earth First Longsleeve', measurements: ['Medium'], description: '', path: process.env.PUBLIC_URL+'/earth-first-longsleeve.png', type: "top", payment_link:"", price: 200.00, status: "sold", images: [process.env.PUBLIC_URL+'/top-icon.jpg']},
         {id: 3, title: 'Give Me Space Jacket', measurements: ['Medium', '23.5 Inches'], description: 'Made from an old pair of pajamas and adidas track pants. Front Pockets included.', path: process.env.PUBLIC_URL+'/give-me-space-longsleeve.png', type: "top", payment_link:"https://buy.stripe.com/00g5m58AO8xD9EcbIJ", price: 60.00, status: "available", images: [process.env.PUBLIC_URL+'/top-icon.jpg']},
@@ -19,11 +22,36 @@ function Main (){
      ]
 
     const headers = [
-        {title: '+ Shop', id:"shop", component:<br/>},
-        {title: 'Home', id:"home", component:<Home pieces={pieces}/>},
-        {title: 'About', id:"about", component:<About/>},
-        {title: 'Contact', id:"contact", component:<Contact/>}
+        {title: '+ Shop', id:"shop", component:<br/>, url: '/shop'},
+        {title: 'Home', id:"home", component:<Home pieces={pieces}/>, url: '/home'},
+        {title: 'About', id:"about", component:<About/>, url: '/about'},
+        {title: 'Contact', id:"contact", component:<Contact/>, url: '/contact'}
     ]
+
+    const router = createBrowserRouter([
+        { 
+          path: '/',
+          element: <Home pieces={pieces}/>,
+          errorElement: <span>404 Not Found</span>
+        },
+        { 
+            path: '/home',
+            element: <Home pieces={pieces}/>,
+            errorElement: <span>404 Not Found</span>
+        },
+        { 
+          path: '/about',
+          element: <About/>
+        },
+        { 
+          path: '/contact',
+          element: <Contact/>
+        },
+        { 
+          path: '/shop',
+          element: <ShopPage/>
+        },
+      ]);
 
     const filteredPieces = (id) => {
         let filteredPiecesArray = [];
@@ -52,7 +80,8 @@ function Main (){
             <Header tabChangeFunction = {handleContentChange} links={headers} shopSections={shopSections}/>
             <img src={process.env.PUBLIC_URL+'/background-logo.png'} className='background-icon'/>
             <div className='content-container'>
-                {content}
+                {/* {content} */}
+                <RouterProvider router={router}/>
             </div>
             <Footer/>
         </Fragment>

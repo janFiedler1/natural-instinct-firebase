@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import '../component-css/HeaderComponent.css';
 
+
 function Header({tabChangeFunction, links, shopSections}) {
     
     

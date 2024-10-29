@@ -9,6 +9,7 @@ import Modal from "./PieceModal";
  * @param {url} payment_link - payment link
  */
 function Piece({piece}) {
+
     return (
         <React.Fragment>
             <a href={piece.payment_link}>
