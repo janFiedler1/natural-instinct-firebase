@@ -15,6 +15,7 @@
 }
 .piece-modal-open{
     display: flex;
+    flex-direction: row;
     height: 80vh;
     width: 80vw;
 }
@@ -25,6 +26,19 @@
     border-right: solid #000;
     border-color: black;
     border-width: 2px;
+    display: flex;
+}
+.piece-modal-current-image {
+    margin: auto;
+    border: 2px solid black;
+    max-width: 50%;
+}
+.image-scroll {
+    padding: 4px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: xx-large;
+    margin: auto;
 }
 .piece-modal-info {
     display: flex;
@@ -49,7 +63,7 @@
 }
 .buy-button {
     font-weight: 900;
-    width: 300px;
+    max-width: 300px;
     height: 70px;
     margin-left: auto;
     margin-right: auto;
@@ -63,4 +77,21 @@
 }
 .buy-button span{
     margin: auto;
+}
+.modal-close-button {
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .piece-modal-open {
+        flex-direction: column;
+    }
+    .piece-modal-image-container {
+        width: 100%;
+    }
+    .piece-modal-info {
+        width: 100%;
+    }
 }

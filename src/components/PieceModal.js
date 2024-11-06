@@ -10,13 +10,33 @@ import '../component-css/PieceModal.css';
 function Modal({piece, open, toggleModal}) {
 
     let modalOpen = open ? " piece-modal-open" : "";
+    const [currentImage, setCurrentImage] = useState(0);
+    const scrollImageLeft = () => {
+        setCurrentImage((currentImage+3)%4);
+        console.log(currentImage);
+    }
+    const scrollImageRight = () => {
+        setCurrentImage((currentImage+1)%4);
+        console.log(currentImage);
+    }
     return (
         <React.Fragment>
             <div className={"piece-modal"+modalOpen}>
                 <div className="piece-modal-image-container image-carousel">
+                    <div className="image-scroll" onClick={scrollImageLeft}>
+                        <span>&lt;</span>
+                    </div>
+                    <img className="piece-modal-current-image" src={process.env.PUBLIC_URL+piece.images[currentImage]}/>
+                    <div className="image-scroll" onClick={scrollImageRight}>
+                        <span>&gt;</span>
+                    </div>
+                    {/* <img src={process.env.PUBLIC_URL+'/earth-first-longsleeve.png'}/>
+                    <img src={process.env.PUBLIC_URL+'/give-me-space-longsleeve.png'}/> */}
                 </div>
                 <div className="piece-modal-info">
-                <div onClick={toggleModal}>XXXXXXXX</div>
+                <div className="modal-close-button" onClick={toggleModal}>
+                    <span>X</span>
+                </div>
                     <span className="title">{piece.title}</span>
                     <span className="description">{piece.description}</span>
                     <div className="measurements">
