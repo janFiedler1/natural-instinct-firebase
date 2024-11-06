@@ -79,9 +79,13 @@
     margin: auto;
 }
 .modal-close-button {
-    margin-left: auto;
-    margin-right: 0;
-    margin-bottom: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.modal-close-button span{
+    font-size: xx-large;
 }
 
 @media screen and (max-width: 1000px) {
@@ -102,5 +106,11 @@
         font-size: medium;
         margin-top: 10px;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-height: 800px) {
+    .piece-modal-image-container {
+        height: 300px;
     }
 }

@@ -23,7 +23,7 @@
 @media (max-width: 900px) {
     .pieces-container {
         columns: 1;
-        width: 400px;
+        width: 350px;
         margin-left: auto;
         margin-right: auto;
     }
