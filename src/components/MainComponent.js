@@ -87,9 +87,9 @@ function Main (){
       ]);
     
     const shopSections = [
-        {title: 'Tops', id:'tops', url: '/shop/tops', component:<ShopPage pieces={filteredPieces("tops")} title="Tops"/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
-        {title: 'Bottoms', id:'bottoms', url: '/shop/bottoms', component:<ShopPage pieces={filteredPieces("bottoms")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
-        {title: 'Accessories', id:'accessories', url: '/shop/accessories', component:<ShopPage pieces={filteredPieces("accessories")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
+        {title: 'Tops', id:'tops', url: '/tops', component:<ShopPage pieces={filteredPieces("tops")} title="Tops"/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
+        {title: 'Bottoms', id:'bottoms', url: '/bottoms', component:<ShopPage pieces={filteredPieces("bottoms")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
+        {title: 'Accessories', id:'accessories', url: '/accessories', component:<ShopPage pieces={filteredPieces("accessories")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
     ]
 
     const [content, setContent] = useState(<Home pieces={pieces}/>);
