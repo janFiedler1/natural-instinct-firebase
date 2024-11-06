@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PieceGrid from './PieceGridComponent';
 import '../component-css/ShopPageComponent.css';
 import { useParams } from "react-router-dom";
@@ -17,13 +17,15 @@ function ShopPage ({pieces, title, category}) {
         return filteredPiecesArray;
     }
 
+    const emptyPage = (filteredPieces(category).length == 0 ? (<span className="empty-page">Nothing available right now, check again another time!</span>) : null);
+
     return (
         <React.Fragment>
             <div className="shop-page-container">
-                {/* <h1 className="shop-page-title">{params.category.charAt(0).toUpperCase() + params.category.slice(1)}</h1>
-                <PieceGrid pieces={filteredPieces(params.category)}/>  */}
                 <h1 className="shop-page-title">{category.charAt(0).toUpperCase() + category.slice(1)}</h1>
+                {emptyPage}
                 <PieceGrid pieces={filteredPieces(category)}/> 
+                
             </div>
         </React.Fragment>
     )

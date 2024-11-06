@@ -47,11 +47,21 @@
     font-size: xx-large;
     margin-top: 15px;
     color: black;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     display: flex;
   }
   .contact-message-text {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  @media screen and (max-width: 520px) {
+    .contact-message-text {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .contact-form {
+      margin-left: 10px;
+      margin-right: 10px;
+      
+    }
   }
