@@ -86,7 +86,7 @@ function Main (){
             payment_link:"https://buy.stripe.com/fZe8yh18m7tzaIg3ch", 
             price: 60.00, 
             status: "available", 
-            images: [process.env.PUBLIC_URL+'/dwade-shorts-front.jpg',process.env.PUBLIC_URL+'/dwade-shorts-back.jpg',process.env.PUBLIC_URL+'/dwade-shorts-model-front.jpeg',process.env.PUBLIC_URL+'/dwade-shorts-model-back.jpeg']
+            images: [process.env.PUBLIC_URL+'/dwade-shorts-front.jpg',process.env.PUBLIC_URL+'/dwade-shorts-back.jpg',process.env.PUBLIC_URL+'/dwade-model-front.jpeg',process.env.PUBLIC_URL+'/dwade-model-back.jpeg']
         },
      ]
 

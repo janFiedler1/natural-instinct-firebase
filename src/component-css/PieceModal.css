@@ -87,11 +87,20 @@
 @media screen and (max-width: 1000px) {
     .piece-modal-open {
         flex-direction: column;
+        height: auto;
     }
     .piece-modal-image-container {
+        /* width: 100%; */
+        height: 400px;
         width: 100%;
     }
     .piece-modal-info {
-        width: 100%;
+        width: auto;
+        height: auto;
+    }
+    .piece-modal-info .description, .piece-modal-info .measurements{
+        font-size: medium;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 }
