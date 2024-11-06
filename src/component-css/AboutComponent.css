@@ -9,7 +9,8 @@
     color: black;
     height: auto;
     font-size: 30px;
-    background-color: #ffffffa9;
+    background-color: #ffffff;
+    border: 2px solid black;
 }
 .about-section span{
     margin: 10px;  

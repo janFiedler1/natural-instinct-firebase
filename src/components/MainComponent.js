@@ -22,10 +22,10 @@ function Main (){
      ]
 
     const headers = [
-        {title: '+ Shop', id:"shop", component:<br/>, url: './shop'},
-        {title: 'Home', id:"home", component:<Home pieces={pieces}/>, url: './home'},
-        {title: 'About', id:"about", component:<About/>, url: './about'},
-        {title: 'Contact', id:"contact", component:<Contact/>, url: './contact'}
+        {title: '+ Shop', id:"shop", component:<br/>, url: '/shop'},
+        {title: 'Home', id:"home", component:<Home pieces={pieces}/>, url: '/home'},
+        {title: 'About', id:"about", component:<About/>, url: '/about'},
+        {title: 'Contact', id:"contact", component:<Contact/>, url: '/contact'}
     ]
 
     const filteredPieces = (id) => {
@@ -64,20 +64,32 @@ function Main (){
         { 
           path: '/shop',
           element: <ShopPage pieces={pieces}/>,
-          children: [
-            { 
-                path: '/shop/:category',
-                element: <ShopPage pieces={pieces}/>,
-                errorElement: <span>404 Not Found</span>
-            }
-          ]
+        //   children: [
+        //     { 
+        //         path: '/shop/:category',
+        //         element: <ShopPage pieces={pieces}/>,
+        //         errorElement: <span>404 Not Found</span>
+        //     }
+        //   ]
+        },
+        { 
+            path: '/shop/tops',
+            element: <ShopPage pieces={pieces} category="tops"/>
+        },
+        { 
+            path: '/shop/bottoms',
+            element: <ShopPage pieces={pieces} category="bottoms"/>
+        },
+        { 
+            path: '/shop/accessories',
+            element: <ShopPage pieces={pieces} category="accessories"/>
         }
       ]);
     
     const shopSections = [
-        {title: 'Tops', id:'tops', url: '/shop/tops', component:<ShopPage pieces={filteredPieces("top")} title="Tops"/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
-        {title: 'Bottoms', id:'bottoms', url: '/shop/bottoms', component:<ShopPage pieces={filteredPieces("bottom")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
-        {title: 'Accessories', id:'accessories', url: '/shop/bottoms', component:<ShopPage pieces={filteredPieces("accessory")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
+        {title: 'Tops', id:'tops', url: '/shop/tops', component:<ShopPage pieces={filteredPieces("tops")} title="Tops"/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
+        {title: 'Bottoms', id:'bottoms', url: '/shop/bottoms', component:<ShopPage pieces={filteredPieces("bottoms")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
+        {title: 'Accessories', id:'accessories', url: '/shop/accessories', component:<ShopPage pieces={filteredPieces("accessories")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
     ]
 
     const [content, setContent] = useState(<Home pieces={pieces}/>);

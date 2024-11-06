@@ -20,8 +20,10 @@ function ShopPage ({pieces, title, category}) {
     return (
         <React.Fragment>
             <div className="shop-page-container">
-                <h1 className="shop-page-title">{params.category.charAt(0).toUpperCase() + params.category.slice(1)}</h1>
-                <PieceGrid pieces={filteredPieces(params.category)}/> 
+                {/* <h1 className="shop-page-title">{params.category.charAt(0).toUpperCase() + params.category.slice(1)}</h1>
+                <PieceGrid pieces={filteredPieces(params.category)}/>  */}
+                <h1 className="shop-page-title">{category.charAt(0).toUpperCase() + category.slice(1)}</h1>
+                <PieceGrid pieces={filteredPieces(category)}/> 
             </div>
         </React.Fragment>
     )
