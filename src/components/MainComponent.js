@@ -61,27 +61,27 @@ function Main (){
           path: '/contact',
           element: <Contact/>
         },
+        // { 
+        //   path: '/shop',
+        //   element: <ShopPage pieces={pieces}/>,
+        // //   children: [
+        // //     { 
+        // //         path: '/shop/:category',
+        // //         element: <ShopPage pieces={pieces}/>,
+        // //         errorElement: <span>404 Not Found</span>
+        // //     }
+        // //   ]
+        // },
         { 
-          path: '/shop',
-          element: <ShopPage pieces={pieces}/>,
-        //   children: [
-        //     { 
-        //         path: '/shop/:category',
-        //         element: <ShopPage pieces={pieces}/>,
-        //         errorElement: <span>404 Not Found</span>
-        //     }
-        //   ]
-        },
-        { 
-            path: '/shop/tops',
+            path: '/tops',
             element: <ShopPage pieces={pieces} category="tops"/>
         },
         { 
-            path: '/shop/bottoms',
+            path: '/bottoms',
             element: <ShopPage pieces={pieces} category="bottoms"/>
         },
         { 
-            path: '/shop/accessories',
+            path: '/accessories',
             element: <ShopPage pieces={pieces} category="accessories"/>
         }
       ]);
