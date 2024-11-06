@@ -45,7 +45,7 @@ export default function Contact() {
         </div>
         <div className="contact-message">
           <span className="contact-message-text">
-            I do custom pieces on request, fill out the form above to let me know what you want to see!
+          I do customs upon request! Fill out the form above for inquiries. We can discuss what you want made! Can send me items as well you may want reworked!
           </span>
         </div>
       </React.Fragment>
