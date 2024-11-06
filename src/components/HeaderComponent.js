@@ -27,20 +27,12 @@ function Header({tabChangeFunction, links, shopSections}) {
         <React.Fragment>
             <div className="header sticky-header">
                 <h1 className="logo-word">NATURAL INSTINCT</h1>
-                {/* <div className="navigation-menu">
-                    {links.map((link) => (
-                        <button key={link.id} onClick={() => (link.id=="shop" ? toggleShopDropdown() : changeTab(link.component))} className={"navigation-item "+(link.id=="shop" ? "shop-nav-button" : "")} >
-                            {link.title}
-                        </button>
-                    ))}
-                </div> */}
                 <div className="navigation-menu">
                     <button key={0} onClick={toggleShopDropdown} className={"navigation-item shop-nav-button"} >
                         {"+ Shop"}
                     </button>
                     {links.slice(1,4).map((link) => (
                         <a href={link.url}>
-                            {/* onClick={() => (link.id=="shop" ? toggleShopDropdown() : changeTab(link.component))} */}
                             <button key={link.id} className={"navigation-item "+(link.id=="shop" ? "shop-nav-button" : "")} >
                                 {link.title}
                             </button>

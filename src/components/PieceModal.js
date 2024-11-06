@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import '../component-css/PieceModal.css';
 
 /**
@@ -7,20 +7,23 @@ import '../component-css/PieceModal.css';
  * @param {url} path - path to the image
  * @param {url} payment_link - payment link
  */
-function Modal({piece}) {
+function Modal({piece, open, toggleModal}) {
+
+    let modalOpen = open ? " piece-modal-open" : "";
     return (
         <React.Fragment>
-            <div className="piece-modal">
+            <div className={"piece-modal"+modalOpen}>
                 <div className="piece-modal-image-container image-carousel">
                 </div>
                 <div className="piece-modal-info">
+                <div onClick={toggleModal}>XXXXXXXX</div>
                     <span className="title">{piece.title}</span>
                     <span className="description">{piece.description}</span>
                     <div className="measurements">
                         <ul>
                         {piece.measurements.map((measurement) => (
                             <React.Fragment>
-                                <li>{measurement}</li>
+                                <li key={measurement}>{measurement}</li>
                             </React.Fragment>
                         ))}
                         </ul>
