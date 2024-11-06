@@ -6,7 +6,7 @@ function Home ({pieces}) {
     return (
         <React.Fragment>
             <h1 className="homepage-title">Newest Drops</h1>
-            <PieceGrid pieces={pieces} amount={9} className="page"/> 
+            <PieceGrid pieces={pieces} className="page"/> 
         </React.Fragment>
     )
 }

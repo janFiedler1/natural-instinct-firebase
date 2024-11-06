@@ -22,10 +22,10 @@ function Main (){
      ]
 
     const headers = [
-        {title: '+ Shop', id:"shop", component:<br/>, url: '/shop'},
-        {title: 'Home', id:"home", component:<Home pieces={pieces}/>, url: '/home'},
-        {title: 'About', id:"about", component:<About/>, url: '/about'},
-        {title: 'Contact', id:"contact", component:<Contact/>, url: '/contact'}
+        {title: '+ Shop', id:"shop", component:<br/>, url: './shop'},
+        {title: 'Home', id:"home", component:<Home pieces={pieces}/>, url: './home'},
+        {title: 'About', id:"about", component:<About/>, url: './about'},
+        {title: 'Contact', id:"contact", component:<Contact/>, url: './contact'}
     ]
 
     const filteredPieces = (id) => {
@@ -63,13 +63,15 @@ function Main (){
         },
         { 
           path: '/shop',
-          element: <ShopPage pieces={pieces}/>
-        },
-        { 
-            path: '/shop/:category',
-            element: <ShopPage pieces={pieces}/>,
-            errorElement: <span>404 Not Found</span>
-        },
+          element: <ShopPage pieces={pieces}/>,
+          children: [
+            { 
+                path: '/shop/:category',
+                element: <ShopPage pieces={pieces}/>,
+                errorElement: <span>404 Not Found</span>
+            }
+          ]
+        }
       ]);
     
     const shopSections = [
@@ -89,7 +91,6 @@ function Main (){
             <Header tabChangeFunction = {handleContentChange} links={headers} shopSections={shopSections}/>
             <img src={process.env.PUBLIC_URL+'/background-logo.png'} className='background-icon'/>
             <div className='content-container'>
-                {/* {content} */}
                 <RouterProvider router={router}/>
             </div>
             <Footer/>
