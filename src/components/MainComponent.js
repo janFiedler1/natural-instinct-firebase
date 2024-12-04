@@ -21,7 +21,7 @@ function Main (){
             type: "bottoms", 
             payment_link:"https://buy.stripe.com/cN2bKtcR415b4jSbII", 
             price: 60.00, 
-            status: "available", 
+            status: "sold", 
             images: [process.env.PUBLIC_URL+'/rockets-shorts-front.jpg',process.env.PUBLIC_URL+'/rockets-shorts-back.jpg',process.env.PUBLIC_URL+'/harden-shorts-model-front.jpeg',process.env.PUBLIC_URL+'/harden-shorts-model-back.jpeg']
         },
         {id: 2, 
@@ -30,7 +30,7 @@ function Main (){
             path: process.env.PUBLIC_URL+'/earth-first-front.jpg', 
             type: "tops", 
             payment_link:"", 
-            price: 200.00, 
+            price: 100.00, 
             status: "sold", 
             images: []
         },
