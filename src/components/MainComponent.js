@@ -22,7 +22,7 @@ function Main (){
             payment_link:"https://buy.stripe.com/cN2bKtcR415b4jSbII", 
             price: 60.00, 
             status: "sold", 
-            images: [process.env.PUBLIC_URL+'/rockets-shorts-front.jpg',process.env.PUBLIC_URL+'/rockets-shorts-back.jpg',process.env.PUBLIC_URL+'/harden-shorts-model-front.jpeg',process.env.PUBLIC_URL+'/harden-shorts-model-back.jpeg']
+            images: [process.env.PUBLIC_URL+'/rockets-shorts-front.jpg',process.env.PUBLIC_URL+'/rockets-shorts-back.jpg',process.env.PUBLIC_URL+'/harden-shorts-model-front.jpg',process.env.PUBLIC_URL+'/harden-shorts-model-back.jpg']
         },
         {id: 2, 
             title: 'Earth First Longsleeve', 
@@ -43,7 +43,7 @@ function Main (){
             payment_link:"https://buy.stripe.com/00g5m58AO8xD9EcbIJ", 
             price: 60.00, 
             status: "available", 
-            images: [process.env.PUBLIC_URL+'/give-me-space-front.jpg',process.env.PUBLIC_URL+'/give-me-space-back.jpg',process.env.PUBLIC_URL+'/give-me-space-model-front.jpeg',process.env.PUBLIC_URL+'/give-me-space-model-back.jpeg']
+            images: [process.env.PUBLIC_URL+'/give-me-space-front.jpg',process.env.PUBLIC_URL+'/give-me-space-back.jpg',process.env.PUBLIC_URL+'/give-me-space-model-front.jpg',process.env.PUBLIC_URL+'/give-me-space-model-back.jpg']
         },
         {id: 4, 
             title: 'Yin Yang Longsleeve', 
@@ -53,7 +53,7 @@ function Main (){
             type: "tops", 
             payment_link:"https://buy.stripe.com/4gw5m54ky4hneYw6or", 
             price: 70.00, status: "available", 
-            images: [process.env.PUBLIC_URL+'/yin-yang-front.jpg',process.env.PUBLIC_URL+'/yin-yang-back.jpg',process.env.PUBLIC_URL+'/yin-yang-model-front.jpeg',process.env.PUBLIC_URL+'/yin-yang-model-back.jpeg']
+            images: [process.env.PUBLIC_URL+'/yin-yang-front.jpg',process.env.PUBLIC_URL+'/yin-yang-back.jpg',process.env.PUBLIC_URL+'/yin-yang-model-front.jpg',process.env.PUBLIC_URL+'/yin-yang-model-back.jpg']
         },
         {id: 5, 
             title: 'White Sox Jersey', 
@@ -64,7 +64,7 @@ function Main (){
             payment_link:"https://buy.stripe.com/6oE5m54kyaFL4jSaEI", 
             price: 35.00, 
             status: "available", 
-            images: [process.env.PUBLIC_URL+'/white-sox-front.jpg',process.env.PUBLIC_URL+'/white-sox-back.jpg',process.env.PUBLIC_URL+'/white-sox-model-front.jpeg',process.env.PUBLIC_URL+'/white-sox-model-back.jpeg']
+            images: [process.env.PUBLIC_URL+'/white-sox-front.jpg',process.env.PUBLIC_URL+'/white-sox-back.jpg',process.env.PUBLIC_URL+'/white-sox-model-front.jpg',process.env.PUBLIC_URL+'/white-sox-model-back.jpg']
         },
         {id: 6, 
             title: 'Calvin & Hobbes Hoodie', 
@@ -75,7 +75,7 @@ function Main (){
             payment_link:"https://buy.stripe.com/9AQbKtg3gaFL03CdQS", 
             price: 85.00, 
             status: "available", 
-            images: [process.env.PUBLIC_URL+'/calvin-hobbs-front.jpg',process.env.PUBLIC_URL+'/clavin-hobbs-back.jpg',process.env.PUBLIC_URL+'/calvin-hobbs-model-front.jpeg',process.env.PUBLIC_URL+'/calvin-hobbs-model-back.jpeg']
+            images: [process.env.PUBLIC_URL+'/calvin-hobbs-front.jpg',process.env.PUBLIC_URL+'/clavin-hobbs-back.jpg',process.env.PUBLIC_URL+'/calvin-hobbes-model-front.jpg',process.env.PUBLIC_URL+'/calvin-hobbes-model-back.jpg']
         },
         {id: 7, 
             title: 'D Wade Shorts', 
@@ -86,7 +86,7 @@ function Main (){
             payment_link:"https://buy.stripe.com/fZe8yh18m7tzaIg3ch", 
             price: 60.00, 
             status: "available", 
-            images: [process.env.PUBLIC_URL+'/dwade-shorts-front.jpg',process.env.PUBLIC_URL+'/dwade-shorts-back.jpg',process.env.PUBLIC_URL+'/dwade-model-front.jpeg',process.env.PUBLIC_URL+'/dwade-model-back.jpeg']
+            images: [process.env.PUBLIC_URL+'/dwade-shorts-front.jpg',process.env.PUBLIC_URL+'/dwade-shorts-back.jpg',process.env.PUBLIC_URL+'/dwade-model-front.jpg',process.env.PUBLIC_URL+'/dwade-model-back.jpg']
         },
      ]
 

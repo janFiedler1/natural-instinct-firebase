@@ -21,7 +21,7 @@
 }
 .piece-modal-image-container {
     height: 100%;
-    width: 30vw;
+    width: 40vw;
     background-color: rgb(185, 185, 185);
     border-right: solid #000;
     border-color: black;
@@ -31,7 +31,7 @@
 .piece-modal-current-image {
     margin: auto;
     border: 2px solid black;
-    max-width: 50%;
+    max-width: 70%;
 }
 .image-scroll {
     padding: 4px;
