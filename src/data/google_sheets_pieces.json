@@ -1,0 +1,71 @@
+{
+    "pieces": [
+    {
+    "id": "1",
+    "title": "Harden Shorts",
+    "description": "description example",
+    "measurements": ["Size: Medium","Length: 1 Inches","Width: 1 Inches"],
+    "path": "/harden-shorts-front.jpg",
+    "type": "description example",
+    "payment_link": "https://buy.stripe.com/cN2bKtcR415b4jSbII",
+    "price": 60,
+    "status": "available",
+    "images": ["/harden-shorts-front.jpg","/harden-shorts-back.jpg","/harden-shorts-model-front.jpg","/harden-shorts-model-back.jpg"]
+    }, {
+    "id": "2",
+    "title": "Give Me Space",
+    "description": "",
+    "measurements": ["Size: Large","Length: 12 Inches"],
+    "path": "/give-me-space-front.jpg",
+    "type": "",
+    "payment_link": "https://buy.stripe.com/00g5m58AO8xD9EcbIJ",
+    "price": 60,
+    "status": "available",
+    "images": ["/give-me-space-front.jpg","/give-me-space-back.jpg","/give-me-space-model-front.jpg","/give-me-space-model-back.jpg"]
+    }, {
+    "id": "3",
+    "title": "White Sox Jersey",
+    "description": "",
+    "measurements": ["Size: Small"],
+    "path": "/white-sox-jersey-front.jpg",
+    "type": "",
+    "payment_link": "https://buy.stripe.com/6oE5m54kyaFL4jSaEI",
+    "price": 35,
+    "status": "available",
+    "images": ["/white-sox-jersey-front.jpg","/white-sox-jersey-back.jpg","/white-sox-jersey-model-front.jpg","/white-sox-jersey-model-back.jpg"]
+    }, {
+    "id": "4",
+    "title": "Yin Yang Adidas",
+    "description": "",
+    "measurements": [],
+    "path": "/yin-yang-adidas-front.jpg",
+    "type": "",
+    "payment_link": "https://buy.stripe.com/4gw5m54ky4hneYw6or",
+    "price": 70,
+    "status": "available",
+    "images": ["/yin-yang-adidas-front.jpg","/yin-yang-adidas-back.jpg","/yin-yang-adidas-model-front.jpg","/yin-yang-adidas-model-back.jpg"]
+    }, {
+    "id": "5",
+    "title": "Calvin and Hobbes",
+    "description": "",
+    "measurements": [],
+    "path": "/calvin-and-hobbes-front.jpg",
+    "type": "",
+    "payment_link": "https://buy.stripe.com/9AQbKtg3gaFL03CdQS",
+    "price": 85,
+    "status": "available",
+    "images": ["/calvin-and-hobbes-front.jpg","/calvin-and-hobbes-back.jpg","/calvin-and-hobbes-model-front.jpg","/calvin-and-hobbes-model-back.jpg"]
+    }, {
+    "id": "6",
+    "title": "D wade Shorts",
+    "description": "Description goes here",
+    "measurements": [],
+    "path": "/d-wade-shorts-front.jpg",
+    "type": "Description goes here",
+    "payment_link": "https://buy.stripe.com/fZe8yh18m7tzaIg3ch",
+    "price": 60,
+    "status": "sold",
+    "images": ["/d-wade-shorts-front.jpg","/d-wade-shorts-back.jpg","/d-wade-shorts-model-front.jpg","/d-wade-shorts-model-back.jpg"]
+    }
+    ]
+    }

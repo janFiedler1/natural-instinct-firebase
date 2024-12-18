@@ -11,7 +11,9 @@ import { BrowserRouter, createBrowserRouter, RouterProvider} from 'react-router-
 
 
 function Main (){
-
+    // const response = fetch('your_file.json');
+    // const data = response.json();
+    // console.log(data)
     const pieces = [
         {id: 1, 
             title: 'Rockets Shorts', 
@@ -87,6 +89,17 @@ function Main (){
             price: 60.00, 
             status: "available", 
             images: [process.env.PUBLIC_URL+'/dwade-shorts-front.jpg',process.env.PUBLIC_URL+'/dwade-shorts-back.jpg',process.env.PUBLIC_URL+'/dwade-model-front.jpg',process.env.PUBLIC_URL+'/dwade-model-back.jpg']
+        },
+        {id: 8, 
+            title: 'Spiderman X Vemon Shorts', 
+            measurements: [], 
+            description: 'Loading...', 
+            path: process.env.PUBLIC_URL+'/venom-front.jpg', 
+            type: "bottoms", 
+            payment_link:"https://buy.stripe.com/fZe8yh18m7tzaIg3ch", 
+            price: 60.00, 
+            status: "available", 
+            images: [process.env.PUBLIC_URL+'/venom-front.jpg',process.env.PUBLIC_URL+'/venom-back.jpg',process.env.PUBLIC_URL+'/venom-model-front.jpg',process.env.PUBLIC_URL+'/venom-model-back.jpg']
         },
      ]
 
