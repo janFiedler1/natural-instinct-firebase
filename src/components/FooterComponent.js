@@ -14,7 +14,7 @@ function Footer() {
                     </a>
                 </div>
                 <span>
-                    &#169; Natural Instinct 2024, Created by <a href='https://janfiedler1.ca'>Jan Fiedler</a>
+                    &#169; Natural Instinct 2024, Created by <a target="_blank" href='https://janfiedler.ca'>Jan Fiedler</a>
                 </span>
             </div>
         </React.Fragment>
