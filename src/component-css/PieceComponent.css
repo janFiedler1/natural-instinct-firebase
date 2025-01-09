@@ -39,7 +39,7 @@
 .piece-container .img-container {
     margin: 0;
     height: 350px;
-    padding: 10px;
+    padding-top: 10px;
     object-fit: contain;
     display: flex;
 }
