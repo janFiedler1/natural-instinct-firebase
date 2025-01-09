@@ -19,7 +19,9 @@ function Piece({piece}) {
     return (
         <React.Fragment>
             <div key={piece.id} className="piece-container" onClick={piece.status=="available"?toggleModal:void(0)}>
-                <img src={piece.path} className={(piece.status=="sold" ? " grayed-out" : "")}/>
+                <div className="img-container">
+                    <img src={piece.path} className={(piece.status=="sold" ? " grayed-out" : "")}/>
+                </div>
                 <div className={"piece-info"+(piece.status=="sold" ? " red" : "")}>
                     <span className="piece-title">{piece.status=="sold" ? "Sold" : piece.title}</span>
                     <span className="piece-price">{"$"+piece.price}</span>

@@ -7,13 +7,20 @@ import Contact from './Web3ContactComponent';
 import '../component-css/MainComponent.css'
 import ShopPage from './ShopPageComponent';
 
-import { BrowserRouter, createBrowserRouter, RouterProvider} from 'react-router-dom';
+import importedPieces from "../data/pieces.json"
+
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 
 function Main (){
     // const response = fetch('your_file.json');
     // const data = response.json();
     // console.log(data)
+
+    console.log(importedPieces["pieces"][0]);
+    // for(let i=0;i<importedPieces.length;i++) {
+    //     console.log(importedPieces[i])
+    // }
     const pieces = [
         {id: 1, 
             title: 'Rockets Shorts', 
@@ -101,6 +108,17 @@ function Main (){
             status: "available", 
             images: [process.env.PUBLIC_URL+'/venom-front.jpg',process.env.PUBLIC_URL+'/venom-back.jpg',process.env.PUBLIC_URL+'/venom-model-front.jpg',process.env.PUBLIC_URL+'/venom-model-back.jpg']
         },
+        {id: 9, 
+            title: 'Wales Fleece Blanket Hoodie', 
+            measurements: [], 
+            description: 'Loading...', 
+            path: process.env.PUBLIC_URL+'/venom-front.jpg', 
+            type: "bottoms", 
+            payment_link:"https://buy.stripe.com/fZe8yh18m7tzaIg3ch", 
+            price: 60.00, 
+            status: "available", 
+            images: [process.env.PUBLIC_URL+'/wales-front.jpg',process.env.PUBLIC_URL+'/wales-back.jpg',process.env.PUBLIC_URL+'/wales-model-front.jpg',process.env.PUBLIC_URL+'/wales-model-back.jpg']
+        },
      ]
 
     const headers = [
@@ -169,9 +187,9 @@ function Main (){
       ]);
     
     const shopSections = [
-        {title: 'Tops', id:'tops', url: '/tops', component:<ShopPage pieces={filteredPieces("tops")} title="Tops"/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
-        {title: 'Bottoms', id:'bottoms', url: '/bottoms', component:<ShopPage pieces={filteredPieces("bottoms")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
-        {title: 'Accessories', id:'accessories', url: '/accessories', component:<ShopPage pieces={filteredPieces("accessories")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
+        {key:1, title: 'Tops', id:'tops', url: '/tops', component:<ShopPage pieces={filteredPieces("tops")} title="Tops"/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
+        {key:2, title: 'Bottoms', id:'bottoms', url: '/bottoms', component:<ShopPage pieces={filteredPieces("bottoms")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
+        {key:3, title: 'Accessories', id:'accessories', url: '/accessories', component:<ShopPage pieces={filteredPieces("accessories")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
     ]
 
     const [content, setContent] = useState(<Home pieces={pieces}/>);

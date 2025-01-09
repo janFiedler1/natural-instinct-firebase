@@ -32,7 +32,7 @@ function Header({tabChangeFunction, links, shopSections}) {
                         {"+ Shop"}
                     </button>
                     {links.slice(1,4).map((link) => (
-                        <a href={link.url}>
+                        <a key={link.id} href={link.url}>
                             <button key={link.id} className={"navigation-item "+(link.id=="shop" ? "shop-nav-button" : "")} >
                                 {link.title}
                             </button>
@@ -54,7 +54,7 @@ function Header({tabChangeFunction, links, shopSections}) {
                     {"+ Shop"}
                 </button>
                 {links.slice(1,4).map((link) => (
-                    <a href={link.url}>
+                    <a key={link.id} href={link.url}>
                         <button key={link.id} className={"dropdown-navigation-item"} >
                             {link.title}
                         </button>
@@ -65,7 +65,7 @@ function Header({tabChangeFunction, links, shopSections}) {
             <div className={"shop-dropdown menu "+(isShopDropdownOpen ? "toggle_shop_on":"toggle_shop_off")}>
                 <div className="shop-dropdown-container">
                     {shopSections.map((section) => (
-                        <a href={section.url}>
+                        <a key={section.id} href={section.url}>
                             <button key={section.id} className="shop-navigation-item">
                                 <img src={section.img} className="shop-dropdown-img"/>
                                 <span>{section.title}</span>

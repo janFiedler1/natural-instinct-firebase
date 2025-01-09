@@ -1,6 +1,7 @@
 .piece-container {
     position: relative;
-    display: block;
+    display: flex ;
+    flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
     background-color: rgb(255, 255, 255);
@@ -9,6 +10,7 @@
     border-color: black;
     border-width: 2px;
     width: 400px;
+    height: 400px;
     text-decoration: none;
     padding-top: 3%;
     margin-bottom: 5%;
@@ -17,29 +19,6 @@
     page-break-inside: avoid; /* Firefox */
     break-inside: avoid;   
 }
-/* .image-carousel {
-    height: 400px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.image-carousel img {
-    height:300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.image-carousel:hover img {
-    opacity: 1;
-}
-
-.image-carousel img:nth-child(1) {
-    opacity: 1;
-} */
 .piece-info {
     display: flex;
     margin-top: auto;
@@ -57,10 +36,21 @@
     margin-right: 10px;
     margin-left: auto;
 }
-.piece-container img { 
-    height:300px;
+.piece-container .img-container {
+    margin: 0;
+
+    padding: 10px;
+}
+.piece-container .img-container img { 
+    object-fit: contain;
+    /* height:300px; */
+    /* object-fit: contian;
     margin-right: auto;
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    padding-right: 10px; */
 }
 .grayed-out {
     -webkit-filter: grayscale(100%);
@@ -101,3 +91,27 @@ a {
         margin-right: auto;
     }
   }
+
+/* .image-carousel {
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.image-carousel img {
+    height:300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-carousel:hover img {
+    opacity: 1;
+}
+
+.image-carousel img:nth-child(1) {
+    opacity: 1;
+} */

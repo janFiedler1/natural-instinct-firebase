@@ -42,9 +42,7 @@ function Modal({piece, open, toggleModal}) {
                     <div className="measurements">
                         <ul>
                         {piece.measurements.map((measurement) => (
-                            <React.Fragment>
-                                <li key={measurement}>{measurement}</li>
-                            </React.Fragment>
+                            <li key={measurement}>{measurement}</li>
                         ))}
                         </ul>
                     </div>
