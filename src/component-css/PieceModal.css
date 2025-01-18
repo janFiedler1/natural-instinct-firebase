@@ -5,7 +5,7 @@
     position: fixed;
     /* height: 80vh;
     width: 80vw; */
-    top: -15px;
+    /* top: -15px; */
     transition: height 0.2s ease-out, width 0.2s ease-out;
     color: black
 }
