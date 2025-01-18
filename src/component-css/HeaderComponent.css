@@ -26,11 +26,33 @@
     display: flex;
   }
   .dropdown-navigation {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     left: 0;
     width: 100%;
-    font-size: x-large;
+    height: 100%;
+    font-size: xxx-large;
     transition: all 0.2s linear;
+    backdrop-filter: blur(10px);
+    background-color: #0000006c;
+  }
+  .dropdown-navigation-item {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 100%;
+    height: 17vh;
+    border: 0;
+    padding: auto;
+    --webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
+    color: rgb(255, 255, 255);
   }
   .shop-dropdown {
     display: flex;
@@ -52,17 +74,7 @@
   }
   .menu {
     z-index: 9;
-    top: -400px;
-  }
-  .dropdown-navigation-item {
-    width: 100%;
-    border-radius: 0;
-    padding: 0;
-    --webkit-appearance: none !important;
-    -moz-appearance: none;
-    appearance: none;
-    color: black;
-
+    display: none;
   }
   .shop-navigation-item {
     height: 180px;
@@ -81,7 +93,7 @@
   .toggle_shop_off {
   }
   .toggle_on {
-    display: block;
+    display: flex;
     top: 64px;
   }
   .toggle_off {
@@ -166,7 +178,7 @@
       display: block;
     }
     .logo-word {
-      font-size: 20px;
+      font-size: 26px;
     }
     .shop-dropdown-img {
       height: 70%;

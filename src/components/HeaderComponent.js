@@ -18,6 +18,7 @@ function Header({tabChangeFunction, links, shopSections}) {
     };
 
     const [isShopDropdownOpen, setShopDropdownOpen] = useState(false);
+
     const toggleShopDropdown = () => {
         setIsNavOpen(false);
         setShopDropdownOpen(!isShopDropdownOpen);
@@ -40,16 +41,10 @@ function Header({tabChangeFunction, links, shopSections}) {
                     ))}
                 </div>
                 <div className="navigation-dropdown" onClick={showMenu}>
-                    <img className="navigation-dropdown-icon" src={process.env.PUBLIC_URL+'/hamburger-icon-white.png'}/>
+                    <img className="navigation-dropdown-icon" src={isNavOpen ? process.env.PUBLIC_URL+'/close-icon-white.png' : process.env.PUBLIC_URL+'/hamburger-icon-white.png'}/>
                 </div>
             </div>
             <div className={"dropdown-navigation menu "+(isNavOpen ? "toggle_on":"toggle_off")}>
-                {/* {links.map((link) => (
-                    <button key={link.id} onClick={() => (link.id=="shop" ? toggleShopDropdown() : changeTab(link.component))} className="dropdown-navigation-item" >
-                        {link.title}
-                    </button>
-                ))} */}
-                {/* / */}
                 <button key={0} onClick={toggleShopDropdown} className={"dropdown-navigation-item"} >
                     {"+ Shop"}
                 </button>
@@ -60,7 +55,6 @@ function Header({tabChangeFunction, links, shopSections}) {
                         </button>
                     </a>
                 ))}
-                {/*  */}
             </div>
             <div className={"shop-dropdown menu "+(isShopDropdownOpen ? "toggle_shop_on":"toggle_shop_off")}>
                 <div className="shop-dropdown-container">
