@@ -1,24 +1,40 @@
 .piece-modal {
     display: none;
     z-index: 8;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    height: 80vh;
+    width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    transition: height 0.2s ease-out, width 0.2s ease-out;
+    color: black
+}
+.modal-content {
     border: solid #000;
     border-color: black;
     border-width: 2px;
-    background-color: white;
-    position: fixed;
-    top: 10vh;
-    left: 10vw;
-    height: 0px;
-    width: 0px;
-    transition: height 0.2s ease-out, width 0.2s ease-out;
-    color: black
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 80%;
+    margin: auto;
 }
 .piece-modal-open{
     display: flex;
     flex-direction: row;
-    height: 80vh;
-    width: 80vw;
+    opacity: 0;
 }
+
+.piece-modal-animation {
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-out, height 0.2s ease-out, width 0.2s ease-out, top 0.2s ease-out, left 0.2s ease-out,;
+}
+
 .piece-modal-image-container {
     height: 100%;
     width: 40vw;
@@ -80,6 +96,8 @@
 }
 .modal-close-button {
     padding: 10px;
+    margin-top: 10vh;
+    margin-right: 10vw;
     position: absolute;
     right: 0;
     top: 0;
@@ -90,11 +108,11 @@
 
 @media screen and (max-width: 1000px) {
     .piece-modal-open {
+        display: flex;
         flex-direction: column;
-        height: auto;
+        opacity: 0;
     }
     .piece-modal-image-container {
-        /* width: 100%; */
         height: 400px;
         width: 100%;
     }

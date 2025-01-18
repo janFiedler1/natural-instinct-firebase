@@ -11,9 +11,11 @@ import { useState } from "react";
  */
 function Piece({piece}) {
 
+    const [animation, setAnimation] = useState(false);
     const [modalOpen, setModalOpen] = useState(false);
     const toggleModal = () => {
         setModalOpen(!modalOpen);
+        setTimeout(() => {  setAnimation(!animation); }, 100);
     }
 
     return (
@@ -27,7 +29,7 @@ function Piece({piece}) {
                     <span className="piece-price">{"$"+piece.price}</span>
                 </div>
             </div>
-            <Modal piece={piece} open={modalOpen} toggleModal={toggleModal}/>
+            <Modal piece={piece} open={modalOpen} toggleModal={toggleModal} animation={animation}/>
         </React.Fragment>
     )
 }
