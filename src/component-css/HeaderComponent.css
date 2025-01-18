@@ -196,15 +196,27 @@
     .logo-word {
       font-size: 26px;
     }
+    .shop-dropdown {
+      background-color: #c8e4ff00;
+      height: 100vh;
+    }
     .shop-dropdown-img {
       height: 70%;
     }
-    .shop-navigation-item {
-      height: 80px;
+    .shop-dropdown-container {
+      margin-left: 0;
       width: 100%;
+    }
+    .shop-navigation-item {
+      height: 160px;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
       display: flex;
-      margin-top: auto;
-      margin-bottom: auto;
+      margin: auto;
+      display: flex;
+      border: none;
+      font-size: xx-large;
     }
     .shop-navigation-item *{
       margin-top: auto;
