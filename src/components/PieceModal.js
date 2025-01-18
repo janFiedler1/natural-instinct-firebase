@@ -22,8 +22,11 @@ function Modal({piece, open, toggleModal, animation}) {
     }
     return (
         <React.Fragment>
-            <div className={"piece-modal"+modalOpen+modalAnimation} onClick={toggleModal}>
+            <div className={"piece-modal"+modalOpen+modalAnimation}>
                 <div className="modal-content">
+                    <div className="modal-close-button" onClick={toggleModal}>
+                            <span>X</span>
+                        </div>
                     <div className="piece-modal-image-container image-carousel">
                         <div className="image-scroll" onClick={scrollImageLeft}>
                             <span>&lt;</span>
@@ -36,9 +39,6 @@ function Modal({piece, open, toggleModal, animation}) {
                         <img src={process.env.PUBLIC_URL+'/give-me-space-longsleeve.png'}/> */}
                     </div>
                     <div className="piece-modal-info">
-                    <div className="modal-close-button" onClick={toggleModal}>
-                        <span>X</span>
-                    </div>
                         <span className="title">{piece.title}</span>
                         <span className="description">{piece.description}</span>
                         <div className="measurements">

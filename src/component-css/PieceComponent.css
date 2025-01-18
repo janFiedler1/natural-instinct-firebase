@@ -5,6 +5,7 @@
     margin-left: 20px;
     margin-right: 20px;
     background-color: rgb(255, 255, 255);
+    /* backdrop-filter: blur(10px); */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.02), 0 5px 12px -6px rgba(0, 0, 0, 0.1), 0 -12px 25px -19px rgba(0, 0, 0, 0.2);
     border: solid #000;
     border-color: black;
