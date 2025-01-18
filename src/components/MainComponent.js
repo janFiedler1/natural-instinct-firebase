@@ -191,9 +191,9 @@ function Main (){
       ]);
     
     const shopSections = [
-        {key:1, title: 'Tops', id:'tops', url: '/tops', component:<ShopPage pieces={filteredPieces("tops")} title="Tops"/>, img: process.env.PUBLIC_URL+'/top-icon.jpg'},
-        {key:2, title: 'Bottoms', id:'bottoms', url: '/bottoms', component:<ShopPage pieces={filteredPieces("bottoms")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/bottom-icon.jpg'},
-        {key:3, title: 'Accessories', id:'accessories', url: '/accessories', component:<ShopPage pieces={filteredPieces("accessories")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/accessory-icon.jpg'}
+        {key:1, title: 'Tops', id:'tops', url: '/tops', component:<ShopPage pieces={filteredPieces("tops")} title="Tops"/>, img: process.env.PUBLIC_URL+'/nobg-top-icon.png'},
+        {key:2, title: 'Bottoms', id:'bottoms', url: '/bottoms', component:<ShopPage pieces={filteredPieces("bottoms")} title="Bottoms"/>, img: process.env.PUBLIC_URL+'/nobg-bottom-icon.png'},
+        {key:3, title: 'Accessories', id:'accessories', url: '/accessories', component:<ShopPage pieces={filteredPieces("accessories")} title="Accessories"/>, img: process.env.PUBLIC_URL+'/nobg-accessory-icon.png'}
     ]
 
     const [content, setContent] = useState(<Home pieces={pieces}/>);

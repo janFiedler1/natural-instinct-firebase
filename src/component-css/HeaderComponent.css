@@ -7,9 +7,10 @@
     left: 0;
     display: flex;
     width: 100%;
-    background-color: #c8e4ff00;
     height: 64px;
+    background-color: #c8e4ff00;
     backdrop-filter: blur(10px);
+    border-bottom: 2px solid black;
     /* box-shadow: 0 0 5px rgb(97, 97, 97), 0 5px 12px -6px rgb(97, 97, 97), 0 -12px 25px -19px rgb(97, 97, 97); */
   }
   .logo-word {
@@ -55,14 +56,16 @@
     color: rgb(255, 255, 255);
   }
   .shop-dropdown {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     position: fixed;
     font-size: x-large;
-    right: 0;
+    left: 0;
     transition: all 0.4s linear;
-    background-color: #dad9d9;
-    border-width: 1px;
-    border-color: #000000;
+    backdrop-filter: blur(10px);
+    background-color: #c8e4ff00;
+    border-bottom: 2px solid black;
     /* box-shadow: 0 0 5px rgb(97, 97, 97), 0 5px 12px -6px rgb(97, 97, 97), 0 -12px 25px -19px rgb(97, 97, 97); */
   }
   .shop-dropdown-container {
@@ -71,6 +74,8 @@
   }
   .shop-dropdown-img {
     height: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .menu {
     z-index: 9;
@@ -79,24 +84,29 @@
   .shop-navigation-item {
     height: 180px;
     width: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: inherit;
-    background: #dad9d9;
-    border-width: 1px;
-    border-color: #000000;
     outline: none;
     box-shadow: none;
+    background: none;
+    color: white;
+    border: none;
+    border-left: 2px solid black;
+    padding-left: 10px;
+    padding-right: 0px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-right: 15px;
   }
   .toggle_shop_on {
-    
+    display: flex;
     top: 64px;
-  }
-  .toggle_shop_off {
   }
   .toggle_on {
     display: flex;
     top: 64px;
-  }
-  .toggle_off {
   }
   .shop-dropdown .toggle_on{
     background-color: aliceblue;
@@ -155,6 +165,12 @@
       height: auto;
       font-size: x-large;
     }
+  }
+  .shop-dropdown-item-name {
+    background-color: rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
     
   
