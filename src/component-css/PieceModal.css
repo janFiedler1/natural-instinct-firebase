@@ -37,7 +37,8 @@
 .piece-modal-image-container {
     height: 100%;
     width: 40vw;
-    background-color: rgb(185, 185, 185);
+    background-color: rgba(0, 0, 0, 0.295);
+    backdrop-filter: blur(20px);
     display: flex;
 }
 .piece-modal-current-image {
@@ -58,7 +59,8 @@
     flex-direction: column;
     height: 100%;
     width: 50vw;
-    background-color: rgb(226, 226, 226);
+    background-color: rgba(255, 255, 255, 0.349);
+    backdrop-filter: blur(20px);
 }
 .piece-modal-info * {
     margin-left: 10px;
@@ -97,6 +99,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 7;
 }
 .modal-close-button span{
     font-size: xx-large;
