@@ -88,6 +88,8 @@
     background-color: white;
     border-radius: 2px;
     display: flex;
+    color: gray;
+    border-color: gray;
 }
 .buy-button span{
     margin: auto;

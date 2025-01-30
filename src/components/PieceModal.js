@@ -48,11 +48,11 @@ function Modal({piece, open, toggleModal, animation}) {
                             ))}
                             </ul>
                         </div>
-                        <a href={piece.payment_link}>
+                        {/* <a href={piece.payment_link}> */}
                             <div className="buy-button">
-                                <span>Buy</span>
+                                <span>Temporarily unavailable...</span>
                             </div>
-                        </a>
+                        {/* </a> */}
                     </div>
                 </div>
 
